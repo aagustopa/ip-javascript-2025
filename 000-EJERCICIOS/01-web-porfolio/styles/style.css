@@ -1,0 +1,227 @@
+    @import url('./fonts.css');
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    /** Cabecera */
+    
+    .main-header {
+        background-color: white;
+    }
+    
+    .selected {
+        color: hsl(221, 100%, 50%);
+    }
+    /********************************************/
+    /** Main */
+    
+    main {
+        background-color: hsl(30, 32%, 85%);
+    }
+    
+    .home-main {
+        background-image: linear-gradient( to right, hsl(30, 32%, 85%) 35%, white 35%)
+    }
+    
+    .profile {
+        background-color: hsl(26, 39%, 93%);
+    }
+    
+    .social-icons {
+        background-color: white;
+        font-size: 20px;
+    }
+    /** Puedo dar estilos solo al social-icons que esté dentro del footer  */
+    
+    .main-footer .social-icons {
+        font-size: 14px;
+    }
+    
+    .button {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .button-primary {
+        background-color: hsl(221, 100%, 50%);
+        color: white;
+    }
+    
+    .button-secondary {
+        background-color: white;
+    }
+    /* .year-title {
+  color: #0050ff;
+}
+
+.project-title {
+  color: #0050ff;
+} */
+    /* También podemos unir la misma propiedad en dos selectores 👉 ,  */
+    
+    .year-title,
+    .project-title,
+    .required {
+        color: hsl(221, 100%, 50%);
+    }
+    /* Otra opción es hacer una clase de UTILIDAD que me indique qué estilos le va a poner. En este caso el texto en azul */
+    
+    .text-blue {
+        color: #0050ff;
+    }
+    /* CONTACTO HTML*/
+    
+    header {
+        display: flex;
+        height: 8vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header>h1 {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+    
+    span.name {
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+    span {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .blue-box {
+        background-color: #0050ff;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+    
+    .menu-contenido {
+        display: flex;
+    }
+    
+    .menu-contenido>a {
+        gap: 2rem;
+        font-size: 16px;
+    }
+    
+    .content {
+        background: #E7DCCF;
+        height: 80vh;
+    }
+    
+    .title {
+        text-align: center;
+    }
+    
+    .white-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    input,
+    label {
+        display: block;
+        margin: 20px 0;
+        padding: 0 20px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    
+    input,
+    textarea {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid black;
+    }
+    
+    input#name,
+    input#surname {
+        margin: 30px 0;
+    }
+    
+    input#email {
+        margin: 30px 0;
+    }
+    
+    input#subject {
+        margin: 30px 0;
+    }
+    
+    .form {
+        margin: 0 auto;
+        width: 100%;
+        /* border: 1px solid #000; */
+        background: #fff;
+        padding: 0 50px;
+        box-shadow: -5px -1px 20px -3px;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        /* margin-right: 40px; */
+        width: 100%;
+        /* padding: 0 40px; */
+    }
+    
+    .button {
+        color: #fff;
+        background: #0050ff;
+        margin: 20px auto 70px auto;
+    }
+    /* Pie de página */
+    
+    .main-footer {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .left {
+        padding: 0 0 0 30px;
+    }
+    
+    .left>.politica {
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 900;
+    }
+    
+    .right {
+        display: flex;
+        gap: 70px;
+        padding: 0 80px 0 0;
+    }
+    
+    .right h2,
+    a {
+        font-size: 16px;
+    }

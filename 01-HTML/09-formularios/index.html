@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://picsum.photos/32">
+  <title>Formularios en HTML</title>
+</head>
+<body>
+  <h1>Formularios en HTML</h1>
+
+
+
+  <form>
+      <p>Todos los inputs TIENEN QUE ESTAR RELACIONADOS CON SUS LABELS</p>
+      <!-- Tenemos una forma SEPARADA de utilizar el label y el input -->
+
+      
+      <fieldset>
+        <legend>Inputs básicos</legend>
+        <h2>Para texto</h2>
+        <div>
+          <label for="name">Nombre:</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="John"
+            maxlength="10"
+            minlength="3"
+            required
+          >
+        </div>
+        
+        
+        <!-- También podemos usar esta otra forma de unirlos -->
+        
+        <div>
+          <label>Apellidos:
+            <input type="text">
+          </label>
+        </div>
+        <h2>Para números</h2>
+        <div>
+          <label>Edad:
+            <input type="number" max="120" min="18">
+          </label>
+        </div>
+        <h2>Para email</h2>
+        <p>Lo único que hace es una validación mínima de que escribas un email, si no, no te deja enviarlo</p>
+        <div>
+          <label for="emaillsdjfh">Email:</label>
+          <input id="email" type="email" >
+        </div>
+        <h2>Para contraseñas:</h2>
+        <p>Lo único que hace es esconder lo que escribes con puntitos</p>
+        <div>
+          <label for="pass">Contraseña:</label>
+          <input id="pass" type="password">
+        </div>
+        <h2>Para fechas:</h2>
+        <div>
+          <label for="birth">Tu cumpleaños:</label>
+          <input id="birth" type="date">
+        </div>
+        <h2>Para colores:</h2>
+        <div>
+          <label for="color">Tu color favorito:</label>
+          <input id="color" type="color">
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Seleccionable</legend>
+        <h2>Select 👉 Para seleccionar entre una de las opciones</h2>
+        <label>Tus vacaciones:
+          <select required>
+            <option value="">Selecciona una ciudad...</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Berlín">Berlín</option>
+            <option value="París">París</option>
+            <option value="Roma">Roma</option>
+            <option value="Ibiza">Ibiza</option>
+            <option value="Bangkok">Bangkok</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <hr>
+
+      <h2>Radio (solo puedes marcar uno)</h2>
+      <p>Todos los inputs radio que quieras que vayan unidos tienen que tener el mismo atributo name=""</p>
+
+      <div>
+        <input id="male" type="radio" name="gender">
+        <label for="male">Masculino</label>
+      </div>
+
+      <div>
+        <input id="female" type="radio" name="gender">
+        <label for="female" >Femenino</label>
+      </div>
+
+      <div>
+        <input id="non-binary" type="radio" name="gender">
+        <label for="non-binary">No binario</label>
+      </div>
+
+      <p>Si los haces de la segunda forma quedarían así</p>
+
+      
+      <label>
+        <input type="radio" name="gender2">
+        Masculino
+      </label>
+    
+      <label>
+        <input type="radio" name="gender2">
+        Femenino
+      </label>
+
+      <label>
+        <input type="radio" name="gender2">
+        No binario
+      </label>
+
+      <h2>Checkbox (marcar y desmarcar)</h2>
+      <h3>¿Qué lenguajes conoces?</h3>
+
+      <label>
+        <input type="checkbox">
+        HTML
+      </label>
+      <label>
+        <input type="checkbox">
+        CSS
+      </label>
+      <label>
+        <input type="checkbox">
+        JavaScript
+      </label>
+      <label>
+        <input type="checkbox">
+        Python
+      </label>
+
+      <h2>Caja de texto grande</h2>
+      <label>Mensaje:
+        <textarea></textarea>
+      </label>
+
+      <br>
+      <br>
+      <button>Enviar</button>
+
+  </form>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://picsum.photos/32">
+    <title>Etiquetas semánticas</title>
+</head>
+
+<body>
+    <h1>Etiquetas semánticas</h1>
+
+    <h2>Etiquetas que agrupan y que son genéricas (no semánticas)</h2>
+
+    <h3>div 👉 Caja genérica que sirve para envolver CUALQUIER TIPO DE ETIQUETA</h3>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ab.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ab.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ab.</p>
+    </div>
+
+    <h3>span 👉 Es otra caja genérica que usamos SOLO PARA TEXTOS</h3>
+
+    <p>No lo vemos porque no sabemos CSS pero <span>"estas palabras"</span> están envueltas en un span</p>
+
+    <hr>
+
+    <h3>Vamos a hacer una web SIN ETIQUETAS SEMÁNTICAS</h2>
+        <p>Imaginaros que a partir de aquí empieza mi web</p>
+        <p>👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇</p>
+
+
+
+        <!-- Cabecera -->
+        <div style="background-color: yellow">
+            <img src="https://picsum.photos/id/200/100/50" alt="Mi logo">
+
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Sobre mí</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+
+        <div>
+            <!-- Bienvenida -->
+            <div style="background-color: tomato">
+                <h1>Web de Ivan Luengo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam rem animi, omnis excepturi praesentium adipisci ipsa voluptatum sit, ea fugiat distinctio minima voluptates repellendus dolorem quia nulla? Quibusdam est quisquam
+                    expedita voluptatem saepe dignissimos minima labore similique debitis ad, excepturi soluta accusamus, quam quas. Tempore eligendi aliquam quaerat natus?</p>
+            </div>
+
+            <!-- Proyectos -->
+            <div style="background-color: lightblue;">
+
+                <h2>Mis proyectos</h2>
+
+                <div>
+                    <h3>Proyecto 1</h3>
+                    <img src="https://picsum.photos/id/203/100/80" alt="Foto proyecto 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum incidunt doloribus nemo quae ducimus.</p>
+                </div>
+
+
+                <div>
+                    <h3>Proyecto 2</h3>
+                    <img src="https://picsum.photos/id/222/100/80" alt="Foto proyecto 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum incidunt doloribus nemo quae ducimus.</p>
+                </div>
+
+
+                <div>
+                    <h3>Proyecto 3</h3>
+                    <img src="https://picsum.photos/id/225/100/80" alt="Foto proyecto 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum incidunt doloribus nemo quae ducimus.</p>
+                </div>
+            </div>
+
+            <!-- Coemntarios -->
+            <div style="background-color: lightcoral">
+
+                <h2>Comentarios</h2>
+
+
+                <div>
+                    <h3>Comentario 1</h3>
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni quasi itaque tenetur assumenda et eos reprehenderit?"
+                        <p>
+
+                </div>
+
+                <div>
+                    <h3>Comentario 2</h3>
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni quasi itaque tenetur assumenda et eos reprehenderit?"
+                        <p>
+
+                </div>
+
+                <div>
+                    <h3>Comentario 3</h3>
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni quasi itaque tenetur assumenda et eos reprehenderit?"
+                        <p>
+                </div>
+            </div>
+
+
+            <!-- Otros links -->
+            <div style="background-color: lightseagreen;">
+                <h2>Otros links de interés</h2>
+
+                <div>
+                    <a href="#">Otro link</a>
+                    <a href="#">Otro link más</a>
+                    <a href="#">Otro link extra</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Pie -->
+        <div style="background-color: gray;">
+            <p>Todos los derechos reservados | 2025</p>
+
+            <div>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de cookis</a>
+                <a href="#">Aviso legal</a>
+            </div>
+
+        </div>
+
+
+
+        <h2>Ahora sí que vemos etiqueta semánticas</h2>
+        <p>Imaginaros que la nueva web corregida empieza a partir de aquí</p>
+
+        <p>👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇</p>
+
+
+
+
+
+        <header style="background-color: yellow">
+            <img src="https://picsum.photos/id/200/100/50" alt="Mi logo">
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre mí</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Bienvenida -->
+            <section style="background-color: tomato">
+                <h1>Web de Ivan Luengo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam rem animi, omnis excepturi praesentium adipisci ipsa voluptatum sit, ea fugiat distinctio minima voluptates repellendus dolorem quia nulla? Quibusdam est quisquam
+                    expedita voluptatem saepe dignissimos minima labore similique debitis ad, excepturi soluta accusamus, quam quas. Tempore eligendi aliquam quaerat natus?</p>
+            </section>
+
+            <!-- Proyectos -->
+            <section style="background-color: lightblue;">
+
+                <h2>Mis proyectos</h2>
+
+                <article>
+                    <h3>Proyecto 1</h3>
+                    <img src="https://picsum.photos/id/203/100/80" alt="Foto proyecto 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum incidunt doloribus nemo quae ducimus.</p>
+                </article>
+
+
+                <article>
+                    <h3>Proyecto 2</h3>
+                    <img src="https://picsum.photos/id/222/100/80" alt="Foto proyecto 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum incidunt doloribus nemo quae ducimus.</p>
+                </article>
+
+
+                <article>
+                    <h3>Proyecto 3</h3>
+                    <img src="https://picsum.photos/id/225/100/80" alt="Foto proyecto 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, earum incidunt doloribus nemo quae ducimus.</p>
+                </article>
+            </section>
+
+            <!-- Comentarios -->
+            <section style="background-color: lightcoral">
+
+                <h2>Comentarios</h2>
+
+
+                <article>
+                    <h3>Comentario 1</h3>
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni quasi itaque tenetur assumenda et eos reprehenderit?"
+                        <p>
+
+                </article>
+
+                <article>
+                    <h3>Comentario 2</h3>
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni quasi itaque tenetur assumenda et eos reprehenderit?"
+                        <p>
+
+                </article>
+
+                <article>
+                    <h3>Comentario 3</h3>
+                    <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex magni quasi itaque tenetur assumenda et eos reprehenderit?"
+                        <p>
+                </article>
+            </section>
+
+
+            <!-- Otros links -->
+            <aside style="background-color: lightseagreen;">
+                <h2>Otros links de interés</h2>
+
+                <nav>
+                    <a href="#">Otro link</a>
+                    <a href="#">Otro link más</a>
+                    <a href="#">Otro link extra</a>
+                </nav>
+
+            </aside>
+
+        </main>
+
+        <!-- Pie -->
+        <footer style="background-color: gray;">
+            <p>Todos los derechos reservados | 2025</p>
+
+            <nav>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de cookis</a>
+                <a href="#">Aviso legal</a>
+            </nav>
+
+        </footer>
+
+
+
+
+
+
+        <h3>Resumen de etiquetas semánticas</h3>
+        <ul>
+            <li>header</li>
+            <li>footer</li>
+            <li>nav</li>
+            <li>main</li>
+            <li>section</li>
+            <li>article</li>
+            <li>aside</li>
+        </ul>
+
+
+
+
+</body>
+
+</html>

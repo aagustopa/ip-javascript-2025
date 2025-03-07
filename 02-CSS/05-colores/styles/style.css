@@ -1,0 +1,38 @@
+
+/* Aquí tienes el link de los nombres de los colores */
+/* https://www.w3schools.com/cssref/css_colors.php */
+.name-color {
+  color: tomato;
+}
+
+.hex-color {
+  color: #ff6347;
+}
+
+/* Añadimos dos cifras mas al final para la transparencia */
+.hex-color-trans {
+  color: #0063ff80;
+}
+
+.rgb-color {
+  color: rgb(255, 99, 71);
+  color: rgb(236, 137, 120);
+}
+
+.rgb-color-trans {
+  color: rgb(0, 99, 255, 0.5);
+  color: rgb(0 99 255 / 0.5);
+}
+
+.hsl-color {
+  /* h = hue (tono)    s = saturation    l = luminosity (brillo) */
+  color: hsl(0, 100%, 50%);
+  color: hsl(0, 100%, 80%);
+  color: hsl(0, 100%, 30%);
+}
+
+.hsl-color-trans {
+  color: hsl(0, 100%, 50%, 0.3);
+  color: hsl(0 100% 50% / 0.3);
+}
+

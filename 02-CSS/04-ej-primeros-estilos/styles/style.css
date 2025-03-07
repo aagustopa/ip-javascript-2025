@@ -1,0 +1,44 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+body {
+    font-family: "Playfair Display";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* ul li a { */
+
+.menu-link {
+    text-decoration: none;
+    color: #FF1493;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+.date {
+    font-weight: 600;
+    color: #FF6347;
+}
+
+.news-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.text-yellow {
+    color: crimson;
+}

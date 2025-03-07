@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://picsum.photos/32">
+  <title>Tablas en HTML</title>
+</head>
+<body>
+  <h1>Tablas en HTML</h1>
+
+  <h2>Tabla simple</h2>
+
+  <ul>
+    <li>&lt;table></li>
+    <li>&lt;tr> 👉 fila</li>
+    <li>&lt;th> 👉 celda de título</li>
+    <li>&lt;td> 👉 celda de datos</li>
+    <li>&caption;td> 👉 Título descriptivo de la tabla</li>
+  </ul>
+
+  <!-- Siempre se empieza con la etiqueta table -->
+  <!--! Nunca poner bordes a las tablas con el atributo border="" yo lo he hecho solo para que se vea mejor mientras explico  -->
+  
+  <table border="1px">
+    <caption>Tabla simple</caption>
+    <!-- Cada FILA se hace con la etiqueta <tr> (table row) -->
+    <tr>
+      <th>Nombre</th>
+      <th>Apellidos</th>
+      <th>Edad</th>
+    </tr>
+
+
+
+    <tr>
+      <td>Ivan</td>
+      <td>Luengo</td>
+      <td>38</td>
+    </tr>
+
+
+
+
+    <tr>
+      <td>Jessica</td>
+      <td>Hernández</td>
+      <td>40</td>
+    </tr>
+
+
+
+    <tr>
+      <td>Carlos</td>
+      <td>García</td>
+      <td>27</td>
+    </tr>
+  </table>
+
+  <h2>Tabla con columnas combinadas</h2>
+  <p>Para ello usamos el atributo <code>colspan=""</code> en la celda que se va a estirar</p>
+
+  <table border="1px">
+
+    <tr>
+      <th>Producto</th>
+      <th>Precio unitario</th>
+      <th>Cantidad</th>
+      <th>Total</th>
+    </tr>
+
+
+    <tr>
+      <td>Raqueta</td>
+      <td>25</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+
+
+    <tr>
+      <td>Pelota</td>
+      <td>2</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+
+
+    <!-- Para estirar una celda un número columnas usamos el atributo colspan="" -->
+    <tr>
+      <td colspan="3">Total</td>
+      <td>35</td>
+    </tr>
+
+    <caption>Tabla con columnas combinadas</caption>
+
+  </table>
+
+  <h2>Tabla con columnas y filas combinadas</h2>
+  <p>Para ello usamos el atributo <code>colspan=""</code> y <code>rowspan=""</code> en la celda que se va a estirar</p>
+
+
+  <table border="1px">
+    <caption>Tabla con columnas y filas combinadas</caption>
+    <tr>
+      <th>Deporte</th>
+      <th>Producto</th>
+      <th>Precio unitario</th>
+      <th>Cantidad</th>
+      <th>Total</th>
+    </tr>
+
+
+    <tr>
+      <th rowspan="3">Tenis</th>
+      <td>Raqueta</td>
+      <td>25</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+
+
+    <tr>
+      <td>Pelota</td>
+      <td>2</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+
+
+    <tr>
+      <td>Red</td>
+      <td>100</td>
+      <td>1</td>
+      <td>100</td>
+    </tr>
+
+
+    <tr>
+      <th rowspan="2">Esquí</th>
+      <td>Esquis</td>
+      <td>250</td>
+      <td>2</td>
+      <td>500</td>
+    </tr>
+
+
+    <tr>
+      <td>Guantes Esquí</td>
+      <td>70</td>
+      <td>1</td>
+      <td>70</td>
+    </tr>
+
+
+    <tr>
+      <th colspan="4">TOTAL</th>
+      <td>705</td>
+    </tr>
+  </table>
+  
+</body>
+</html>

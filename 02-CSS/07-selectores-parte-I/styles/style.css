@@ -1,0 +1,77 @@
+/* Selector universal 👉 Sirve para darle estilos a TODAS LAS ETIQUETAS */
+
+* {
+    text-decoration: none;
+}
+
+
+/* Selector por etiqueta */
+
+h1 {
+    color: red;
+}
+
+p {
+    color: pink;
+}
+
+
+/* Selector por  class  👉    .  */
+
+.button {
+    background-color: white;
+}
+
+
+/* Selector por id  👉     #    */
+
+#supertitulo {
+    color: gold;
+}
+
+
+/* Selector por atributo  👉    []   */
+
+[required] {
+    color: red;
+}
+
+[type="email"] {
+    font-size: 20px;
+}
+
+
+/* Selector combinado 👉 Puedo juntar dos selectores SIN PONER ESPACIO y estaré aumentando la especificidad */
+
+h2.titulo-molon {
+    color: hotpink;
+}
+
+.titulo-molon {
+    color: red;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+h3.titulo-molon {
+    color: indigo;
+}
+
+
+/* Puedes alargarlo lo que sea, MIENTRAS NO PONGAS ESPACIOS */
+
+h2.titulo-molon#supertitulo[placeholder] {}
+
+
+/* Selector por hijos directos  👉    >    */
+
+.lista-2>li {
+    background-color: hotpink;
+}
+
+
+/* Selector por hijos genéricos (hijos, nietos, viznietos) 👉     "espacio" */
+
+.lista-1 li {
+    font-weight: bold;
+}

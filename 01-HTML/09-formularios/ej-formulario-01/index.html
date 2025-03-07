@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://picsum.photos/32">
+  <title>Formulario 1</title>
+</head>
+<body>
+  <h1>Pedido de pizza</h1>
+
+  <form>
+
+    <fieldset>
+      <legend>La pizza</legend>
+
+
+      <h2>Ingredientes</h2>
+
+      <input id="cheese" type="checkbox">
+      <label for="cheese">Queso</label>
+      <br>
+      <label>
+        <input type="checkbox" checked>
+        Pimiento
+      </label>
+      <br>
+      <label>
+        <input type="checkbox">
+        Cebolla
+      </label>
+
+      <h2>Tamaño</h2>
+      <label>
+        <input type="radio" name="size" checked>
+        Pequeña
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="size">
+        Mediana
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="size">
+        Grande
+      </label>
+
+
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Datos de entrega</legend>
+
+      <label>
+        Nombre
+        <input type="text">
+      </label>
+      <label>
+        Dirección
+        <input type="text">
+      </label>
+      <label>
+        Teléfono
+        <input type="tel">
+      </label>
+      <label>
+        Instrucciones especiales
+        <textarea></textarea>
+      </label>
+    </fieldset>
+
+
+    <fieldset>
+      <legend>Método de pago</legend>
+
+      <select>
+        <option value="efectivo">Efectivo</option>
+        <option value="bizum">Bizum</option>
+        <option value="tarjeta">Tarjeta</option>
+      </select>
+    </fieldset>
+
+    <button>Ok</button>
+  </form>
+  
+</body>
+</html>

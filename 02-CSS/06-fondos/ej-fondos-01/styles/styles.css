@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+}
+
+.image {
+    background-image: url("https://images.pexels.com/photos/3068920/pexels-photo-3068920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+}
+
+.color {
+    background-color: bisque;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, red 50%, blue 70%);
+}
+
+.image-gradient {
+    background-image: linear-gradient(rgba(190, 26, 26, 0.5), rgba(15, 195, 208, 0.5)), url("https://images.pexels.com/photos/3068920/pexels-photo-3068920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+}
+
+.image-color {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.pexels.com/photos/3068920/pexels-photo-3068920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*background tiene una propiedad mas que agrupa todas en una.*/
+
+.ejemplo {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    /* same as.... */
+    background: url(""), no-repeat top right / cover;
+}

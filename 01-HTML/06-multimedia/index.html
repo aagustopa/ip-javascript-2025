@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/logo.svg">
+  <title>Archivos multimedia</title>
+</head>
+<body>
+  <h1>Archivos multimedia</h1>
+
+  <h2>Imágenes</h2>
+
+  <p>Las etiquetas "img" son huérfanas, No necesitan etiqueta de cierre</p>
+
+  <img src="./assets/img/perro1.jpg" height="1500px" alt="Foto de un perro carlino en un fondo amarillo">
+  
+  <p>Podemos definirle un ancho y alto con atributos PERO MEJOR HACERLO EN CSS</p>
+  
+  <img src="./assets/img/gato1.jpg" width="200px" alt="Foto de un gato amarillo durmiendo">
+  <img src="./assets/img/gato1.jpg" height="100px" alt="Foto de un gato amarillo durmiendo">
+
+  <p>OJO! No poner nunca width y height a no ser QUE SEPAMOS CUANTO TIENE QUE TENER CADA UNO PARA NO DEFORMAR LA FOTO</p>
+
+  <img src="./assets/img/perro1.jpg" width="150px" height="100px" alt="Foto de un perro carlino en un fondo amarillo">
+  
+  <p>Las fotos también pueden medir un tanto por ciento del ancho</p>
+  <img src="./assets/img/gato1.jpg" width="50%" alt="Foto de un gato">
+
+  <p>Algo importante es que tendríamos que tener los tamaños de las fotos COMO MÁXIMO en el tamañao máximo que va a aparecer en pantalla.</p>
+
+  <img src="./assets/img/perro1-small.jpg" width="400px" alt="Foto perro">
+  <img src="./assets/img/gato1.jpg" width="100px" alt="Foto gato">
+  <img src="./assets/img/perro1-small.jpg" width="100px" alt="Foto perro">
+  <img src="./assets/img/gato1.jpg" width="100px" alt="Foto gato">
+
+
+  <h3>Podemos añadir un título a una imagen relacionándolo con las etiquetas "figure" y "figcaption"</h3>
+
+  <figure>
+    <img src="./assets/img/gato1.jpg" height="100px" alt="Foto de un gato amarillo durmiendo">
+    <figcaption>Gato durmiendo</figcaption>
+  </figure>
+
+  <h2>Vídeo</h2>
+
+  <h3>Forma simple</h3>
+
+  <p>❌ ¡No podemos usar autoplay si no está en muted!</p>
+
+  <video 
+    src="./assets/video/mar.mp4" 
+    width="300px" 
+    autoplay
+    loop
+    muted
+    controls
+  >
+  
+    Tu navegador no permite vídeos
+  </video>
+
+  <h3>Forma compleja</h3>
+  <p>La diferencia es que podemos pasarle a una etiqueta vídeo diferentes archivos de vídeo en diferentes formatos para que el navegador coja uno o otro.</p>
+  
+  <video width="250px" controls loop>
+    <source src="./assets/video/mar.webp">
+    <source src="./assets/video/mar.mov">
+    <source src="./assets/video/mar.mp4">
+  </video>
+
+
+  <h2>Audio</h2>
+
+  <h3>Forma simple</h3>
+  
+  <audio src="./assets/audio/moby-porcelain.mp3" controls loop muted autoplay></audio>
+
+  <h3>Forma compleja</h3>
+
+
+
+
+  <audio controls>
+    <source src="assets/audio/moby-porcelain.wav">
+    <source src="assets/audio/moby-porcelain.mp3">
+  </audio>
+
+  <h2>iFrames</h2>
+  <p>Ventanita que te permite ver contenido de otras páginas webs</p>
+
+  <iframe src="https://20minutos.es"></iframe>
+
+  <h3>Videos de youtube</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nLuiAdPJyCM?si=TYzX02CWATF0l_LD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h3>Mapas de Google</h3>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5369313015117!2d2.135909174860053!3d41.3841444961982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a499cc22c457ff%3A0xb6b9f80557e8b1ab!2sMeet%26Go%20C72!5e0!3m2!1ses!2ses!4v1739880115412!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <h3>Podcast de iVoox</h3>
+  <iframe src="https://www.ivoox.com/player_ej_139834835_6_1.html?c1=b05657" width="100%" height="200" frameborder="0" allowfullscreen="" scrolling="no" loading="lazy"></iframe>
+
+
+
+  <h2>Favicon = Iconito que aparece en la pestaña del navegador</h2>
+
+  <p>Para añadir esa imagen tenemos que ir a nuestra etiqueta "head" y añadimos una nueva etiqueta. La etiqueta "link"</p>
+
+  <h2>Imágenes placeholder (de relleno)</h2>
+
+  <h3>picsum.photos con una foto aleatoria</h3>
+
+  <img src="https://picsum.photos/300" width="300" alt="">
+
+  <h3>picsum.photos con fotos fijas usando id</h3>
+
+
+  <img src="https://picsum.photos/id/223/400/200" alt="">
+  <img src="https://picsum.photos/id/225/400/200" alt="">
+  <img src="https://picsum.photos/id/237/400" alt="">
+
+</body>
+</html>

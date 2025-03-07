@@ -1,0 +1,80 @@
+/* Esto es un comentario
+que puede ser de varias líneas
+*/
+
+
+/*? Sintaxis de una regla CSS */
+
+/* 
+  selector 👉 parte que va antes de las llaves (li)
+  llaves 👉 Envuelven todas las propiedades css {}
+  propiedades css 👉 cada modificación que se le puede hacer a una etiqueta   color
+  dos puntos 👉 Separan la propiedad de su valor.  :
+  valor 👉 valor que quieras darle  orange
+  punto y coma 👉 Despues de cada propiedad SIEMPRE punto y coma
+
+*/
+
+li { 
+  color: orange; 
+}
+
+/** CSS == Cascade Style Sheet  */
+/*! NORMA 1: El CSS va en CASCADA, eso quiere decir que LO QUE ESTÁ MÁS ABAJO GANA A LO QUE ESTÁ MÁS ARRIBA */
+
+li {
+  color: hotpink;
+  color: purple;
+}
+
+/*? ¿Cómo selecciono cosas para darle estilos???  */
+
+/** Por su etiqueta HTML */
+
+h1 {
+  color: tomato;
+}
+
+/** Por su class=""  👉   .   */
+
+.parrafin {
+  color: green;
+}
+
+.parrafo-2 {
+  color: gold;
+}
+
+.lila {
+  color: purple;
+}
+
+
+/** Por si id=""  👉   #  */
+
+#megaparrafo {
+  color: royalblue;
+}
+
+/*! La diferencia entre class y id es que id SOLO PUEDE HABER UNO LLAMADO ASÍ EN TODA LA WEB, en cambio las classes pueden estar repetidas tantas veces como quieras  */
+
+
+/*! NORMA 2: En CSS La ESPECIFICIDAD es muy importante. Todo lo que sea MÁS ESPECÍFICO GANA A LO MENOS ESPECÍFICO  */
+
+#megatitulo {
+  color: blueviolet;
+}
+
+.titulo-3 {
+  color: gold;
+}
+
+.rosa {
+  color: hotpink;
+}
+
+/*! NO USAR IMPORTANTS!!!!! Sirven para ganar al resto de cosas, pero da más problemas que soluciones  */
+h3 {
+  color: red !important;
+}
+

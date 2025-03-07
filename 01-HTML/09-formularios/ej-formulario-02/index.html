@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://picsum.photos/32">
+  <title>Formulario 2</title>
+</head>
+<body>
+  <h1>Formulario reserva de viaje</h1>
+
+  <form>
+    <p>* campo obligatorio</p>
+    <fieldset>
+      <legend>Datos del usuario</legend>
+
+      <label>
+        Nombre*
+        <input type="text" required>
+      </label>
+      <br>
+      <br>
+      <label>
+        Apellido*
+        <input type="text" required>
+      </label>
+
+      <br>
+      <br>
+      <label>
+        Email*
+        <input type="email" placeholder="Email address" required>
+      </label>
+
+
+    </fieldset>
+
+
+
+    <fieldset>
+      <legend>Datos del viaje</legend>
+
+      <label>
+        Ciudad*
+        <select required>
+          <option value="">Selecciona una ciudad...</option>
+          <option value="bcn">Barcelona</option>
+          <option value="mad">Madrid</option>
+          <option value="sev">Sevilla</option>
+          <option value="aco">A Coruña</option>
+        </select>
+      </label>
+
+      <br>
+      <br>
+      <label>
+        Fecha de salida*
+        <input type="date" required>
+      </label>
+
+      <br>
+      <br>
+      <label>
+        Número de personas
+        <input type="number">
+      </label>
+    </fieldset>
+
+    <h2>¿Quieres reservar algún extra?</h2>
+
+    <label>
+      <input type="checkbox">
+      Seleccionar asiento
+    </label>
+    <br>
+    <label>
+      <input type="checkbox">
+      Reservar comida especial
+    </label>
+    <br>
+    <label>
+      <input type="checkbox">
+      Guía turístico
+    </label>
+    <br>
+
+    <br>
+    <label>
+      Cupón de descuento
+      <input type="text" placeholder="SAN_VALENTIN">
+    </label>
+    <br>
+    <br>
+
+    <h2>Aceptas los <a href="#">Términos y condiciones</a>?*</h2>
+
+    <label>
+      <input type="radio" name="accept">
+      Acepto
+    </label>
+    <label>
+      <input type="radio" name="accept">
+      No acepto
+    </label>
+
+    <br>
+    <br>
+
+    <!-- <input type="submit" value="Reservar">
+    <input type="reset" value="Borrar formulario">
+    <input type="button" value="Botón inútil"> -->
+
+    <!-- <button type="button">Inutil</button> -->
+    <!-- <button type="reset">Resetear</button> -->
+    <button type="button">Enviar</button>
+  </form>
+  
+</body>
+</html>

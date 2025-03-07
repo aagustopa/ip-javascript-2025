@@ -1,0 +1,73 @@
+.bg-color {
+    background-color: gold;
+}
+
+.bg-button {
+    background-color: hotpink;
+    color: white;
+}
+
+.bg-image {
+    /* color: transparent; */
+    background-image: url('../assets/img/punto.svg');
+    background-image: url('../assets/img/fondo-small.jpg');
+    background-repeat: repeat;
+    /* por defecto */
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    /*                     X     Y     */
+    background-position: 250px 23px;
+    /*                    XY     */
+    background-position: 100px;
+    background-position: 50% 25%;
+    background-position: center bottom;
+    background-position: top left;
+    background-position: center;
+    background-position: left bottom;
+    background-size: 50px;
+    /*                X     Y     */
+    background-size: 100% 100%;
+    background-size: cover;
+    /** Cuando mezclas cover junto con background position. En realidad lo que estás diciendo a CSS es por donde quieres que recorte la imagen. Es decir, si le digo cover y top left, reacortará a la imagen por la derecha y por debajo */
+}
+
+.bg-static-image {
+    background-image: url(../assets/img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    /* Con esta propiedad hacemos fija la imagen  */
+    background-attachment: fixed;
+}
+
+.bg-gradient {
+    /* Lo mínimo es poner dos colores */
+    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(lightcoral, lightblue);
+    /** Puedo cambiarle la dirección */
+    background-image: linear-gradient(to right, red, blue);
+    background-image: linear-gradient(to left, red, blue);
+    background-image: linear-gradient(to bottom, red, blue);
+    background-image: linear-gradient(to top, red, blue);
+    background-image: linear-gradient(45deg, red, blue);
+    /** Puedo poner tantos colores como quieras */
+    background-image: linear-gradient(lightcoral, lightblue, lightyellow, lightgreen);
+    background-image: linear-gradient(lightcoral, lightblue, lightyellow, lightgreen);
+    /** Puede decidir dónde empieza cada color */
+    background-image: linear-gradient( to right, red 50%, blue 70%);
+    background-image: linear-gradient( to right, red 50%, white 50%);
+    background-image: linear-gradient( to bottom, red 25%, gold 25%, gold 75%, red 75%);
+    background-image: linear-gradient( to right, red 50%, white 70%);
+}
+
+.bg-truco {
+    color: white;
+    text-align: center;
+    /* El truquito es que dentro de backgroun-image puedo usar tanto gradientes transparentes como una imagen de fondo, creando una capa en medio del texto y la imagen. */
+    /*! Recuerda separarlo por comas!!  */
+    background-image: linear-gradient(rgba(46, 51, 141, 0.5), rgba(25, 108, 67, 0.546)), url('../assets/img/profile-background.jpg');
+    /* Si quieres que la capa transparentosa sea de un solo color, pon repetido el color en el linear-gradient */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/img/profile-background.jpg');
+    background-position: center;
+    background-size: cover;
+}

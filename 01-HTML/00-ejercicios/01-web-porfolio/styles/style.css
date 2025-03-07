@@ -1,0 +1,36 @@
+/** Cabecera */
+
+.selected {
+  color: #0000ff;
+}
+
+
+/********************************************/
+
+
+
+/** Main */
+
+
+
+/* .year-title {
+  color: #0050ff;
+}
+
+.project-title {
+  color: #0050ff;
+} */
+
+/* También podemos unir la misma propiedad en dos selectores 👉 ,  */
+
+.year-title, .project-title, .required{
+  color: #0050ff;
+}
+
+
+/* Otra opción es hacer una clase de UTILIDAD que me indique qué estilos le va a poner. En este caso el texto en azul */
+.text-blue {
+  color: #0050ff;
+}
+
+

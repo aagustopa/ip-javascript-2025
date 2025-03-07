@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="https://picsum.photos/32">
+  <title>Normas básicas CSS</title>
+</head>
+<body>
+  <h1>Normas básicas CSS</h1>
+
+  <h2>Opcion 1 (no recomendable): Estilizar directamente en HTML usando el atributo <code>style=""</code></h2>
+  <h3 style="color:red">Este título está coloreado directamente en su etiqueta HTML</h3>
+
+  <h2>Opción 2 (no recomendable): Puedo usar las etiquetas <code>&lt;style></code></h2>
+
+  <style>
+    p {
+      color: blue;
+    }
+  </style>
+  
+  <p>Este párrafo tiene color porque se lo hemos dado usando una etiqueta <code>&lt;style></code></p>
+
+
+  <ul>
+    <li>Este "li" tiene color porque se lo hemos dado en un archivo .css separado.</li>
+    <li>Otro li</li>
+  </ul>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis commodi aliquam similique, perspiciatis a illo veritatis praesentium ducimus illum quas cum quos? Ipsum cumque ratione quasi veniam voluptas non!</p>
+
+  <h2>Estilizar con class="" 👉  .</h2>
+
+  <p class="parrafin">Párrafo con la class "parrafin"</p>
+  <p class="parrafo-2">Párrafo con la class "parrafo-2"</p>
+
+  <h2>Estilizar con id="" 👉  #</h2>
+  <p id="megaparrafo" class="lila superparrafo">Párrafo con las clases lila y superparrafo</p>
+  
+  <p>La diferencia entre class y id es que id SOLO PUEDE HABER UNO LLAMADO ASÍ EN TODA LA WEB, en cambio las classes pueden estar repetidas tantas veces como quieras</p>
+
+  <h2>Jugando con las normas de cascada y especificidad</h2>
+
+  <h3 id="megatitulo" class="titulo-3 rosa">Título que tiene class y id</h3>
+
+
+</body>
+</html>

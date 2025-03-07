@@ -1,0 +1,99 @@
+.fuente-link {
+  font-family: "Sigmar", serif;
+}
+
+
+/** Para cargar fuentes en la web utilizamos la directiva @font-face */
+
+/* Regular */
+@font-face {
+  font-family: 'Ivan'; /*Puedes poner el nombre de familia que te plazca*/ 
+  font-family: 'Noto Sans'; 
+  src: url('../assets/fonts/NotoSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Noto Sans'; 
+  src: url('../assets/fonts/NotoSans-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Black */
+@font-face {
+  font-family: 'Noto Sans'; 
+  src: url('../assets/fonts/NotoSans-Black.ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: 'Noto Sans'; 
+  src: url('../assets/fonts/NotoSans-BlackItalic.ttf');
+  font-style: italic;
+  font-weight: 900;
+}
+/* Thin */
+@font-face {
+  font-family: 'Noto Sans'; 
+  src: url('../assets/fonts/NotoSans-Thin.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: 'Noto Sans'; 
+  src: url('../assets/fonts/NotoSans-ThinItalic.ttf');
+  font-style: italic;
+  font-weight: 100;
+}
+
+.sans-regular {
+  font-family: 'Noto Sans';
+}
+
+.sans-italic {
+  font-family: 'Noto Sans';
+  font-style: italic;
+  
+}
+
+.sans-thin {
+  font-family: 'Noto Sans';
+  font-weight: 100;
+}
+.sans-thin-italic {
+  font-family: 'Noto Sans';
+  font-weight: 100;
+  font-style: italic;
+}
+
+.sans-black {
+  font-family: 'Noto Sans';
+  font-weight: 900;
+}
+
+.sans-black-italic {
+  font-family: 'Noto Sans';
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Fuentes variables */
+
+
+@font-face {
+  font-family: 'Dyna Puff';
+  src: url('../assets/fonts/DynaPuff-VariableFont.ttf');
+}
+
+
+.variable-font {
+  font-family: 'Dyna Puff';
+  font-weight: 400;
+}

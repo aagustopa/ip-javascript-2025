@@ -1,0 +1,172 @@
+/* Estilos genéricos */
+
+summary>h2,
+summary>h3,
+summary>h4 {
+    display: inline;
+}
+
+
+/* display 👉 Le cambia a una caja su forma de ser, de inline a block, de block a inline, etc */
+
+.inline {
+    background-color: gold;
+    display: block;
+    /* por defecto para un div */
+    display: inline;
+}
+
+.block {
+    background-color: hotpink;
+    display: block;
+}
+
+.bg-gold {
+    background-color: gold;
+}
+
+img {
+    display: block;
+}
+
+
+/* Caja content y su width y height */
+
+.parrafo-1 {
+    background-color: gold;
+    width: 100%;
+    /** por defecto */
+    width: 300px;
+    /*! Excepto en contadas ocasiones NUNCA TOCO EL HEIGHT  */
+    /* auto = se va adaptando según el contenido */
+    height: auto;
+    /** por defecto*/
+    height: 100px;
+}
+
+.caja {
+    background-color: royalblue;
+    height: 50px;
+    width: 50px;
+}
+
+.container {
+    background-color: gold;
+    width: 50%;
+}
+
+.container>div {
+    background-color: crimson;
+    width: 50%;
+}
+
+
+/** Propiedades prohibidas según el display  */
+
+.div-1 {
+    background-color: hotpink;
+    color: white;
+    width: 100px;
+    /** FUNCIONA */
+    height: 50px;
+    /** FUNCIONA */
+}
+
+.span-1 {
+    background-color: royalblue;
+    color: white;
+    width: 100px;
+    /*! NO FUNCIONA */
+    height: 50px;
+    /*! NO FUNCIONA */
+}
+
+
+/* * display: inline-block */
+
+.inline-block {
+    background-color: indigo;
+    color: white;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+
+/** max-width, min-width, max-height, min-height  */
+
+.max-width {
+    background-color: gold;
+    width: 80%;
+    /* obligado */
+    max-width: 800px;
+    /* tope por arriba */
+    min-width: 600px;
+}
+
+
+/** Padding */
+
+.padding {
+    background-color: crimson;
+    color: white;
+    /** Forma 1: Con las 4 propiedades por separado */
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    /** Forma 2: con el shorthand padding */
+    /*          👆👉👇👈 */
+    padding: 20px;
+    /*          👆👇     👈👉 */
+    padding: 10px 30px;
+    /*            👆       👈👉    👇 */
+    padding: 10px 30px 0;
+    /*          👆    👉     👇   👈*/
+    padding: 0px 15px 50px 5px;
+    /* A veces veréis que se combinan las únicas con el shorthand */
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.padding-2 {
+    /* background-color: gold; */
+    padding-top: 50px;
+}
+
+
+/* Border */
+
+.border {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+}
+
+.border-solid {
+    /* border-style: solid;
+  border-color: red;
+  border-width: 5px; */
+    /**  shorthand para todos los lados */
+    border: solid red 5px;
+    border: 5px solid red;
+    /* Si quisiera podría darle bordes a los lados por separado */
+    /* border-bottom-style: solid;
+  border-bottom-color: indigo;
+  border-bottom-width: 3px; */
+    /** Shorthand para un lado  */
+    border-bottom: 3px solid indigo;
+}
+
+.border-dotted {
+    border: 4px dotted black;
+}
+
+.border-dashed {
+    border: 7px dashed blue;
+}
+
+.input {
+    border: 0;
+    border-bottom: 2px solid black;
+}

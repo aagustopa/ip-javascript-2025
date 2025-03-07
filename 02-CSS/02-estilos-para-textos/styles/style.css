@@ -1,0 +1,115 @@
+
+
+/* Tamaño fuente 👉 font-size */
+
+
+.size-small {
+  font-size: 16px; /** Por defecto */
+  font-size: 10px;
+}
+
+.size-medium {
+  font-size: 20px;
+}
+
+.size-big {
+  font-size: 30px;
+}
+
+
+/* Altura de línea 👉 line-height*/
+
+.line-height-px {
+  line-height: 20px;
+}
+
+.line-height-num {
+  /* Este número técnicamente se multiplicará por el font-size así que es más dinámico que poner solo pixeles */
+  line-height: 1.25;
+}
+
+
+/* Peso de la fuente 👉 font-weight */
+
+.text-bold {
+  font-weight: bold; /* 700 */
+}
+
+.no-bold {
+  font-weight: normal; /* 400 */
+}
+
+/* Texto en cursiva 👉  font-style */
+
+.text-italic {
+  font-style: italic;
+}
+
+.no-italic {
+  font-style: normal;
+}
+
+/* Família tipográfica  👉 font-family */
+.font-sans {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Georgia', serif;
+}
+
+.font-mono {
+  font-family: 'Courier New', monospace;
+}
+
+
+
+/* Subrayado 👉 text-decoration  */
+.underline {
+  text-decoration: none; /* quitar subrayados */
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: underline red;
+  text-decoration: underline dotted;
+  text-decoration: underline dashed;
+  text-decoration: underline dashed red;
+}
+
+/* Alinear texto 👉 text-align */
+
+.align-left{
+  text-align: left;
+}
+.align-right{
+  text-align: right;
+}
+.align-center{
+  text-align: center;
+}
+.align-justify{
+  text-align: justify;
+}
+
+/* Obligar a mayusculas y minusculas */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+
+
+/*! IMPORTANTE: Muchas propiedades CSS, sobretodo las que tratan con textos, son propiedades HEREDABLES  */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(59, 59, 59);
+}

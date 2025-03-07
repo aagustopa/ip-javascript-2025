@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="https://picsum.photos/32">
+    <title>Modelo de caja (Box Model)</title>
+</head>
+
+<body>
+    <h1>Modelo de caja (Box Model)</h1>
+
+
+
+
+
+    <details>
+        <summary>
+            <h2>Dos tipos de caja 👉 block e inline</h2>
+        </summary>
+
+
+        <h3>Cajas de bloque 👉 block</h3>
+
+        <ul>
+            <li>Siempre miden de ANCHO el 100% de su padre</li>
+            <li>De alto SIEMPRE MIDEN LO QUE CONTENGAN (alto automático)</li>
+            <li>Por mucho que cupiera una al lado de la otra, al ser "block" NUNCA SE VAN A PONER ALINEADAS</li>
+        </ul>
+
+        <div>Soy un div</div>
+        <div>Soy otro div</div>
+
+        <h3>Cajas en línea 👉 inline</h3>
+
+        <ul>
+            <li>Siempre mide de ANCHO su contenido</li>
+            <li>La altura también es automática, se expande según su contenido</li>
+            <li>Si hay espacio en la página, las etiquetas en línea se pondrán una al lado de la otra</li>
+            <li>Normalmente las usamos dentro de textos para no romper el formato</li>
+        </ul>
+
+
+        <span>Soy un span</span>
+        <span>Soy otro span</span>
+
+        <p>Párrafo con un
+            <div>div</div> dentro</p>
+        <p>Párrafo con un <span>span</span> dentro</p>
+        <p>Párrafo con un <strong>strong</strong> dentro</p>
+        <p>Párrafo con un <em>em</em> dentro</p>
+        <p>Párrafo con un <u>u</u> dentro</p>
+        <p>Párrafo con un <mark>mark</mark> dentro</p>
+
+
+        <h2>display 👉 Cambiar el comportamiento de una caja</h2>
+
+        <div>Soy un div normal</div>
+        <div>Soy otro div normal</div>
+
+        <div class="inline">Soy un div convertido a inline</div>
+        <div class="inline">otro div inline</div>
+
+        <hr>
+
+        <span>Soy un span normal</span>
+        <span>Soy otro span normal</span>
+
+        <span class="block">Soy un span convertido a "block"</span>
+
+        <h2>Las imágenes son cajas raras, son una especie de inline</h2>
+
+        <h3>Ejemplo de una imagen con un texto al lado</h3>
+        <img src="https://picsum.photos/id/237/100" alt="Foto de un perro">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas at blanditiis fugit minus! Enim, esse.</sp>
+    
+  
+    <h3>Ejemplo de una imagen sola en una caja</h3>
+  
+    <p>Para quitar el espacio que hay debajo de una imagen, solemos decirle a todas las imágenes que tengan un <code>display: block</code></p>
+  
+    <div class="bg-gold">
+      <img src="https://picsum.photos/id/237/100" alt="Foto de un perro">
+    </div>
+  </details>
+
+  <img width="400px" src="./box_model.png" alt="Ilustracion del modelo de caja de CSS">
+
+  <details>
+    <summary>
+      <h2>Content (width y height) 👉 Caja que contiene el contenido</h2>
+    </summary>
+
+    <p>¡Ojo! porque poner width y height es OBLIGAR a la caja a que mida lo que tú le has dicho</p>
+
+    <p class="parrafo-1">Lorem, ipsum dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, odio officia, facere architecto saepe voluptates perferendis fugiat pariatur consequuntur itaque sapiente vitae natus illo quasi esse debitis. Deleniti, fugit libero?</p>
+
+
+    <div class="caja"></div>
+
+    <p>Los tantos por cientos SIEMPRE SON EN REFERENCIA A SU PADRE</p>
+
+    <div class="container">
+      lksdjuhgsfldsgh
+      <div>Hijo</div>
+    </div>
+
+
+  </details>
+
+  <details>
+    <summary>
+      <h2>Propiedades prohibidas según el display</h2>     
+    </summary>
+
+
+    <div class="div-1">Soy un div</div>
+    <span class="span-1">Soy un span</span>
+    </details>
+
+    <details>
+        <summary>
+            <h2>Display: inline-block</h2>
+        </summary>
+        <p>Sirve para decirle a una caja que se comporte como un block y un inline cogiendo lo mejor de cada una.</p>
+        <p>De los BLOCK coge que le puedes dar width y height</p>
+        <p>De los INLINE coge que por defecto tiene el ancho de su contenido y además PERMITE QUE LAS COSAS SE PONGAN UNA AL LADO DE LA OTRA</p>
+
+
+        <div class="inline-block">Soy un div convertido a inline-block</div>
+        <div class="inline-block">Soy otro div convertido a inline-block</div>
+    </details>
+
+
+    <details>
+        <summary>
+            <h2>max-width, min-width, max-height, min-height</h2>
+        </summary>
+
+        <p>Son proìedades que simplemente ponen un TOPE por arriba y por abajo tanto en ancho como en alto.</p>
+        <p>Normalmente ponemos una combinacion de width o height en tanto por ciento y max- y min- en píxeles</p>
+        <div class="max-width">
+            Soy un div con un width del 80%
+        </div>
+
+    </details>
+
+
+    <details>
+        <summary>
+            <h2>Padding 👉 Espaciado que dejamos entre el contenido y el borde de la caja.</h2>
+        </summary>
+
+
+        <div class="padding">Div con padding Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum porro accusamus architecto, natus, amet odit vero distinctio quidem qui maxime tempore at quos, quod sapiente quasi quisquam nam eos error?</div>
+        <div class="padding-2">Otro div</div>
+
+
+        <p>No utilicéis el padding para separar una caja de otra.</p>
+    </details>
+
+
+    <details open>
+        <summary>
+            <h2>Border 👉 Para definir el estilo del borde de la caja</h2>
+        </summary>
+
+        <div>Soy una caja sin borde</div>
+
+        <div class="border border-solid">Soy una caja con borde sólido</div>
+        <br>
+        <div class="border border-dotted">Soy una caja con borde punteado</div>
+        <br>
+        <div class="border border-dashed">Soy una caja con borde de líneas</div>
+        <br>
+
+        <input class="input" placeholder="Nombre..." type="text">
+
+    </details>
+
+</body>
+
+</html>
