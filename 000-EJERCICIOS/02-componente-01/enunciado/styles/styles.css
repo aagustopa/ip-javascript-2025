@@ -1,0 +1,91 @@
+@import url('./fonts.css');
+:root {
+    --back-color: rgb(244, 208, 78);
+    --dark-color: rgb(18, 18, 18);
+    --gray-color: rgb(107, 107, 107);
+    --size: 16px;
+}
+
+body {
+    font-family: 'Figtree';
+    background: var(--back-color);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box-father {
+        border: 1px solid #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 360px;
+        box-shadow: 6px 6px 3px 5px;
+        border-radius: 15px;
+        background: #fff;
+        padding: 20px;
+        .image {
+            width: 100%;
+        }
+        .content-info {
+            margin: 20px auto 0;
+            width: 100%;
+            .btn {
+                font-weight: bold;
+                display: inline-block;
+                background: var(--back-color);
+                color: var(--dark-color);
+                border-radius: 4px;
+                padding: 6px;
+                text-align: center;
+                &:hover {
+                    background: var(--dark-color);
+                    color: var(--back-color);
+                }
+            }
+            .date {
+                font-style: italic;
+                font-weight: 500;
+                color: hsl(0, 0%, 7%);
+                font-size: var(--size);
+                margin: 15px auto 10px;
+            }
+        }
+        .content-text {
+            .title {
+                font-weight: 800;
+                font-size: 24px;
+                a {
+                    color: var(--dark-color);
+                    text-decoration: none;
+                    &:hover {
+                        color: var(--back-color);
+                    }
+                }
+            }
+            .text {
+                font-weight: 500;
+                font-size: var(--size);
+                color: var(--gray-color);
+                width: 100%;
+            }
+        }
+        .content-bottom {
+            margin: 18px auto 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 100%;
+            .circle-image {
+                width: 10%;
+            }
+            .name-editor {
+                font-weight: 800;
+                font-size: var(--size);
+                margin-left: 20px;
+            }
+        }
+    }
+}
