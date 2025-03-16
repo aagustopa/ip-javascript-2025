@@ -210,8 +210,7 @@
         }
     }
     /* ----PROYECTOS HTML---- */
-    
-    .proyectos-section {
+    /* .proyectos-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -272,4 +271,88 @@
                 }
             }
         }
+    } */
+    
+    .proyectos-site {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .content-text {
+            border: 1px solid black;
+            width: 100%;
+        }
+        .content-boxes {
+            border: 1px solid blue;
+            width: 100%;
+            .box {
+                margin: 10px auto;
+                border: 1px solid red;
+                /* height: 200px; */
+                width: 400px;
+                display: flex;
+                /* justify-content: center; */
+                /* align-items: center; */
+                background: #fff;
+                .texts {
+                    width: 60%;
+                    /* padding: 20px 10px; */
+                    /* width: 100%; */
+                    /* height: 100%; */
+                    .blue-border {
+                        border-left: 10px solid #0050ff;
+                        padding-left: 1.5rem;
+                        margin: 45px auto 0 auto;
+                        .subtitle {
+                            font-weight: bold;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+                .image {
+                    width: 40%;
+                    /* height: 100%; */
+                    object-fit: cover;
+                }
+            }
+        }
     }
+    /* RESPONSIVE MOBILE PROYECTOS */
+    /* @media (min-width:320px) {
+        smartphones, iPhone, portrait 480x320 phones 
+        header {
+            display: flex;
+            height: 12vh;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                span {
+                    margin: 0 auto;
+                    .name {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .menu-contenido {
+                display: flex;
+                gap: 0.4rem;
+                a {
+                    font-size: 12px;
+                }
+            }
+        }
+        .proyectos-section {
+            .top-content-text {
+                .subtitle {
+                    margin: 20px auto 30px;
+                    width: 83%;
+                }
+            }
+        }
+    } */
