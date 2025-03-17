@@ -13,43 +13,46 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
 
-        <h1>
+        <div class="title">
             <div class="blue-box"></div>
-            <span class="name">Ivan Luengo</span> <span>/</span> PROFESOR DE PROGRAMACIÓN
-        </h1>
+            <span class="name">
+                Maya Nares
+            </span>
+            <span class="work">
+                / GESTOR DE PROYECTO
+            </span>
+        </div>
 
         <nav class="menu-contenido">
             <a href="./index.html">SOBRE MÍ</a>
             <a href="./curriculum.html">CURRÍCULUM</a>
-            <a href="./proyectos.html">PROYECTOS</a>
-            <a class="selected" href="#">CONTACTO</a>
+            <a class="selected" href="#">PROYECTOS</a>
+            <a href="./contacto.html">CONTACTO</a>
         </nav>
 
     </header>
 
-    <main class="content">
-        <section class="white-box">
-            <h1 class="title">
-                <div class="blue-box"></div>
-                Platiquemos
-            </h1>
+    <!-- <main class="content"> -->
+    <section class="content">
+        <h1 class="title">
+            <div class="blue-box"></div>
+            Platiquemos
+        </h1>
 
-            <form class="form">
-                <div class="flex">
-                    <div class="name">
-                        <label for="name">Nombre <span class="required">*</span></label>
-                        <input id="name" type="text">
-                    </div>
-
-
-                    <div class="last-name">
-                        <label for="surname">Apellido <span class="required">*</span></label>
-                        <input id="surname" type="text">
-                    </div>
+        <form class="form-box">
+            <div class="couple">
+                <div class="name">
+                    <label for="name">Nombre <span class="required">*</span></label>
+                    <input id="name" type="text">
                 </div>
-
+                <div class="last-name">
+                    <label for="surname">Apellido <span class="required">*</span></label>
+                    <input id="surname" type="text">
+                </div>
+            </div>
+            <div class="single">
                 <div class="email">
                     <label for="email">Email <span class="required">*</span></label>
                     <input id="email" type="email">
@@ -64,12 +67,12 @@
                     <label for="message">Mensaje</label>
                     <textarea id="message"></textarea>
                 </div>
+            </div>
 
-
-                <button class="button">Enviar</button>
-            </form>
-        </section>
-    </main>
+            <button class="button">Enviar</button>
+        </form>
+    </section>
+    <!-- </main> -->
 
     <footer class="main-footer">
         <div class="left">

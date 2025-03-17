@@ -85,36 +85,32 @@
     .text-blue {
         color: #0050ff;
     }
-    /* ----CONTACTO HTML----*/
+    /* MENU HEADER */
     
-    header {
+    .header {
         display: flex;
-        height: 12vh;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
-        /* margin: 0 auto; */
-        h1 {
-            font-size: 18px;
-            font-weight: 300;
-            letter-spacing: 1.5px;
-            span {
-                margin-right: 10px;
-                margin-left: 10px;
-                .name {
-                    font-size: 20px;
-                    font-weight: bold;
-                }
+        justify-content: space-between;
+        padding: 30px;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            .name {
+                font-size: 20px;
+                font-weight: bold;
             }
         }
         .menu-contenido {
             display: flex;
-            gap: 1.8rem;
-            a {
-                font-size: 18px;
-            }
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            font-weight: bold;
         }
     }
+    /* ----CONTACTO HTML----*/
     
     .blue-box {
         background-color: #0050ff;
@@ -122,63 +118,72 @@
         width: 20px;
         display: inline-block;
     }
+    /* height: 80vh; */
     
     .content {
         background: #E7DCCF;
-        height: 80vh;
-        .white-box {
-            display: flex;
-            flex-direction: column;
-            padding: 0 50px;
-            margin: 0 auto;
-            width: 50%;
-            .title {
-                text-align: center;
-            }
-            .form {
-                margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+        .title {
+            text-align: center;
+            margin: 30px auto;
+            width: 100%;
+            border: 1px solid pink;
+        }
+        .form-box {
+            /* margin: 0 auto; */
+            /* width: 100%; */
+            border: 1px solid #000;
+            background: #fff;
+            /* box-shadow: -5px -1px 20px -3px; */
+            .couple {
+                display: flex;
+                /* justify-content: space-between; */
+                /* margin-right: 40px; */
                 width: 100%;
-                /* border: 1px solid #000; */
-                background: #fff;
-                padding: 0 50px;
-                box-shadow: -5px -1px 20px -3px;
-                .flex {
-                    display: flex;
-                    justify-content: space-between;
-                    /* margin-right: 40px; */
-                    width: 100%;
-                    /* padding: 0 40px; */
-                }
-                input,
-                label {
-                    display: block;
-                    margin: 20px 0;
-                    padding: 0 20px;
-                    font-size: 16px;
-                    font-weight: 800;
-                }
-                input,
-                textarea {
-                    border-top: none;
-                    border-right: none;
-                    border-left: none;
-                    border-bottom: 1px solid black;
-                }
-                input#name,
-                input#surname {
-                    margin: 30px 0;
-                }
-                input#email {
-                    margin: 30px 0;
-                }
-                input#subject {
-                    margin: 30px 0;
-                }
-                .button {
-                    color: #fff;
-                    background: #0050ff;
-                    margin: 20px auto 70px auto;
-                }
+                /* padding: 0 40px; */
+            }
+            .single {
+                border: 1px solid blue;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                width: 100%;
+                /* justify-content: space-between; */
+            }
+            input,
+            label {
+                display: block;
+                margin: 20px 0;
+                padding: 0 20px;
+                font-size: 16px;
+                font-weight: 800;
+            }
+            input,
+            textarea {
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid black;
+            }
+            input#name,
+            input#surname {
+                margin: 30px 0;
+            }
+            input#email {
+                margin: 30px 0;
+            }
+            input#subject {
+                margin: 30px 0;
+            }
+            .button {
+                color: #fff;
+                background: #0050ff;
+                margin: 20px auto 70px auto;
             }
         }
     }
@@ -282,6 +287,19 @@
         .content-text {
             border: 1px solid black;
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 0;
+            .title {
+                text-align: center;
+            }
+            .subtitle {
+                width: 45%;
+                margin: 0 auto;
+                text-align: center;
+            }
         }
         .content-boxes {
             border: 1px solid blue;
@@ -290,13 +308,15 @@
                 margin: 10px auto;
                 border: 1px solid red;
                 /* height: 200px; */
-                width: 400px;
+                width: 50%;
                 display: flex;
                 /* justify-content: center; */
                 /* align-items: center; */
                 background: #fff;
+                margin: 40px auto;
                 .texts {
                     width: 60%;
+                    padding: 20px 30px 0 0;
                     /* padding: 20px 10px; */
                     /* width: 100%; */
                     /* height: 100%; */
@@ -308,6 +328,10 @@
                             font-weight: bold;
                             margin-bottom: 50px;
                         }
+                    }
+                    .text {
+                        padding-left: calc(1.5rem + 10px);
+                        font-weight: bolder;
                     }
                 }
                 .image {
