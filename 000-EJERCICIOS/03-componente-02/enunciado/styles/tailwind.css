@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'Hankek Grotesk';
+    src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root {}

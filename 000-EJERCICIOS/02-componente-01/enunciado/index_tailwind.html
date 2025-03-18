@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+</head>
+
+<body>
+    <div class="font-[Figtree] bg-(--back-color) flex justify-center items-center min-h-screen m-0">
+        <article class="bg-[#fff] shadow-[6px_6px_3px_5px] border flex flex-col items-center justify-center w-[360px] rounded-[15px] p-[20px]">
+            <img class="w-full" src="assets/images/illustration-article.svg" alt="imagen">
+            <!-- <div class="w-full mt-[20px] mr-auto ml-auto mb-[0px]"> -->
+            <div class="w-full m-[20px_auto_0]">
+                <span class="bg-(--back-color) text-(--dark-color) font-bold inline-block rounded-[4px] text-center p-[6px] hover:bg-(--dark-color) hover:text-(--back-color)">Learning</span>
+                <div class="italic text-(--size) m-[15px_auto_10px_auto]">Published 21 Dec 2023</div>
+            </div>
+            <div class="">
+                <h1 class="font-extrabold text-[24px]"><a href="#">HTML n CSS foundations</a></h1>
+                <div class="font-medium text-(--size) w-full">These languages are the backbone of every website, defining structure, content, and presentation. </div>
+            </div>
+            <div class="m-[18px_auto_0_auto] flex items-center justify-start w-full">
+                <img class="w-[10%]" src="assets/images/image-avatar.webp" alt="">
+                <div class="font-extrabold text-(--size) ml-[15px]">Greg Hooper</div>
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

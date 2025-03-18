@@ -8,3 +8,10 @@
     src: url('../assets/fonts/Figtree-Italic-VariableFont_wght.ttf');
     font-style: italic;
 }
+
+:root {
+    --back-color: rgb(244, 208, 78);
+    --dark-color: rgb(18, 18, 18);
+    --gray-color: rgb(107, 107, 107);
+    --size: 16px;
+}
