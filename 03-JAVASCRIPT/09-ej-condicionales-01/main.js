@@ -1,8 +1,8 @@
 // condicionales
 // EJERCICIO 01
 // const score = prompt("nota del examen?");
-const score = undefined;
-const scorepassed = 5;
+// const score = undefined;
+// const scorepassed = 5;
 
 // if (Number(score) && (score < 0 && score > 10)) {
 // if (Number(score)) {
@@ -18,9 +18,9 @@ const scorepassed = 5;
 // }
 
 // EJERCICO 02
-const intNumber = null;
-const parImpar = intNumber % 2;
-const multiplo = intNumber % 5;
+// const intNumber = null;
+// const parImpar = intNumber % 2;
+// const multiplo = intNumber % 5;
 
 // if (intNumber >= 0) {
 //     console.log(`positive number`);
