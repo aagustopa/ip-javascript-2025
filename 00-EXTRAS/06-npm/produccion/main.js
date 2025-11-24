@@ -1,0 +1,1 @@
+(()=>{var o="useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict";var r=(e=21)=>{let t="",l=crypto.getRandomValues(new Uint8Array(e|=0));for(;e--;)t+=o[l[e]&63];return t};var n=document.querySelector(".btn-1");console.log("test");var a=25;a>18&&console.log("Eres mayor de edad");n.addEventListener("click",()=>alert(`Este es tu nuevo ID: ${r()}`));})();

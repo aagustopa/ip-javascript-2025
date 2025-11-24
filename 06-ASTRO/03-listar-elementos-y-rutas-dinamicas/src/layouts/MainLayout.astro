@@ -1,0 +1,30 @@
+---
+import { ClientRouter } from 'astro:transitions';
+
+import Header from '../components/Header.astro';
+
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Iconos de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="icon" href="https://picsum.photos/32" />
+    <title>Home</title>
+  </head>
+  <body>
+    <ClientRouter />
+    <Header />
+    <slot />
+  </body>
+</html>
+
+<style is:global></style>

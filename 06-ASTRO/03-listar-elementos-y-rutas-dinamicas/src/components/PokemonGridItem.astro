@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+
+import type { PokemonSimple } from '../config/types';
+
+interface Props {
+  pokemon: PokemonSimple;
+}
+
+const { pokemon } = Astro.props;
+
+const pokemonId = pokemon.url.split('/').at(-2);
+---
+
+<a href={`/pokemons/${pokemon.name}`}>
+  <article class="p-6 bg-white rounded relative shadow-lg border">
+    <Image
+      src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`}
+      alt={`Imagen del pokemon ${pokemon.name}`}
+      width={200}
+      height={200}
+      class="rounded-lg"
+      transition:name={`image-${pokemon.name}`}
+    />
+    <h2
+      class="text-center text-xl font-bold text-indigo-500"
+      transition:name={`title-${pokemon.name}`}
+    >
+      {pokemon.name}
+    </h2>
+    <span class="absolute top-1 left-2 text-indigo-500 font-bold text-lg">
+      {pokemonId}
+    </span>
+  </article>
+</a>

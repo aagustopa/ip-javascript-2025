@@ -1,0 +1,16 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+import Button from "../components/Button.astro";
+
+const nombre = "Ivancito";
+---
+
+<MainLayout title="Mi primera app con Astro - Home">
+  <h1>Hola {nombre}</h1>
+  <Button size="sm">Click me</Button>
+  <Button>Click me</Button>
+  <Button size="lg">Click me</Button>
+  <Button size="xl">Click me</Button>
+  <!-- <Button size="superlarge">Click me</Button> -->
+</MainLayout>

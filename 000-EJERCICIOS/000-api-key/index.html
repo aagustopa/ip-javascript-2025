@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giphy API</title>
+</head>
+
+<body>
+    <h1 class="text-center">gifs api</h1>
+    <h2 class="text-center">gif search</h2>
+    <div class="form text-center border">
+        <!-- <input id="user-input" data-search type="text" placeholder="gif searcher"> -->
+        <!-- <button id="search" data-send type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Send</button> -->
+    </div>
+    <form class="max-w-sm mx-auto">
+        <input id="user-input" name="searchUser" type="text" placeholder="gif searcher">
+        <!-- <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Select how many gifs you want</label> -->
+        <select name="limit" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option selected>Select how many gifs you want</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+        </select>
+        <button id="search" data-send type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Send</button>
+    </form>
+    <div class="body-container flex flex-wrap justify-center">
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

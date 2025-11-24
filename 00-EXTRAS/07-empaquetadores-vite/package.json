@@ -1,0 +1,17 @@
+{
+  "name": "07-empaquetadores-vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "desarrollo": "vite dev",
+    "construccion": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nanoid": "^5.1.5",
+    "vite": "^6.3.3"
+  }
+}

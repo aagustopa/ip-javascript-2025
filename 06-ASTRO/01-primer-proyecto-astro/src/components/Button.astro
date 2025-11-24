@@ -1,0 +1,51 @@
+---
+interface Props {
+  size?: 'sm' | 'lg' | 'xl' | 'default';
+}
+
+const { size = 'default' } = Astro.props;
+
+// let btnSizeClass = '';
+// if (size === 'sm') {
+//   btnSizeClass = 'btn-sm';
+// } else if (size === 'lg') {
+//   btnSizeClass = 'btn-lg';
+// } else if (size === 'xl') {
+//   btnSizeClass = 'btn-xl';
+// }
+
+const classes = {
+  sm: 'btn btn-sm',
+  lg: 'btn btn-lg',
+  xl: 'btn btn-xl',
+  default: 'btn',
+};
+---
+
+<button class={classes[size]}>
+  <!-- Slot va a meter aquí todo el contenido que pongas entre la etiqueta de apertura y la de cierre del <Button> -->
+  <slot />
+</button>
+
+<style>
+  .btn {
+    background-color: lightseagreen;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+  }
+
+  .btn-sm {
+    font-size: 1.2rem;
+  }
+
+  .btn-lg {
+    font-size: 2rem;
+  }
+
+  .btn-xl {
+    font-size: 3rem;
+  }
+</style>

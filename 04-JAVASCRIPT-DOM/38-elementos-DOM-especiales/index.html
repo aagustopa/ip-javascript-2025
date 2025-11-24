@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="https://picsum.photos/32">
+  <title>Elementos DOM especiales</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Elementos DOM especiales</h1>
+
+    <details>
+      <summary>
+        <h2>Elemento form 👉 Reset</h2>
+      </summary>    
+  
+      <p>Si apretamos Ctrl + m harás reset al formulario</p>
+      <form class="form-1">
+        <input class="input-name" type="text" placeholder="Nombre...">
+      </form>      
+    </details>
+
+    <details>
+      <summary>
+        <h2>Vídeo 👉 play/pause</h2>
+      </summary>
+
+
+      <div class="video-box">
+        <video class="sea-video" src="./assets/video/mar.mp4">
+          Tu navegador no soporta el elemento vídeo
+        </video>
+        <div class="buttons">
+          <button class="play-btn" type="button">▶️</button>
+          <button class="pause-btn" type="button">⏸️</button>
+        </div>
+      </div>
+  </details>
+
+  <details open>
+    <summary>
+      <h2>Dialog (ventana modal) 👉 showModal/hide</h2>
+    </summary>
+
+
+    <dialog class="modal-1">
+      <h2>Soy una ventana modal</h2>
+      <button class="close-modal-button" type="button">✖️</button>
+    </dialog>
+
+    <button class="open-modal-button" type="button">Abrir modal</button>
+  
+    
+  </details>
+    
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+
+import { cities } from '../config/cities';
+import Button from '../components/Button.astro';
+---
+
+<MainLayout>
+  <main class="container mx-auto my-8">
+    <h1 class="text-3xl font-bold">Home</h1>
+
+    <h2 class="text-2xl font-bold my-4">¿Cómo renderiza valores Astro?</h2>
+
+    <h3>String: {'esto es un string'}</h3>
+    <h3>Number: {23.147}</h3>
+    <h3>Boolean: {true}</h3>
+    <h3>Boolean: {false}</h3>
+    <h3>Array: {[2, 4, 6]}</h3>
+    <h3>Array: {['hola', 'qué', 'áse']}</h3>
+    <h3>Array: {[<span>1</span>, <span>2</span>]}</h3>
+    <h3>Objeto: {{ name: 'Ivan', age: 23 }}</h3>
+    <h3>Objeto stringifiao: {JSON.stringify({ name: 'Ivan', age: 23 })}</h3>
+
+    <h2 class="text-2xl font-bold my-4">Cities</h2>
+
+    <ul>
+      <!-- {[<li>Barcelona</li>, <li>Madrid</li>, <li>Paris</li>]} -->
+
+      {cities.map((city) => <li>{city.name}</li>)}
+    </ul>
+
+    <Button>Click</Button>
+    <Button size="small">Click me</Button>
+    <Button size="large">Click me</Button>
+  </main>
+</MainLayout>

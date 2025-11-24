@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Header />
+    <slot />
+    <!-- <Footer /> -->
+  </body>
+</html>
+
+<!-- La directiva is:global hace que esta etiqueta style se aplique a todas las etiquetas y componentes que estén dentro de MainLayout, incluídos los hijos y otros componentes dentro de MainLayout -->
+<style is:global>
+  :root {
+    --main-color: royalblue;
+    --secondary-color: lightseagreen;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+</style>

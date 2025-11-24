@@ -1,0 +1,46 @@
+---
+import type { PokemonFull } from '../config/types';
+import capitalize from '../utils/capitalize';
+import PokemonTypes from './PokemonTypes.astro';
+
+interface Props {
+  pokemon: PokemonFull;
+}
+
+const { pokemon } = Astro.props;
+
+console.log(pokemon);
+---
+
+<section class="flex flex-col items-center relative">
+  <h2
+    class="text-center text-3xl font-bold text-indigo-500"
+    transition:name={`title-${pokemon.name}`}
+  >
+    {capitalize(pokemon.name)}
+    <button type="button" class="play-button cursor-pointer">▶️</button>
+  </h2>
+  <img
+    class="h-64 mt-8"
+    src={pokemon.sprites.other['official-artwork'].front_default}
+    alt={`Imagen del pokemon ${pokemon.name}`}
+    transition:name={`image-${pokemon.name}`}
+  />
+  <span class="absolute top-1 left-2 text-indigo-500 font-bold text-4xl">
+    {pokemon.id}
+  </span>
+  <audio data-audio-cry src={pokemon.cries.latest || pokemon.cries.legacy}
+  ></audio>
+  <PokemonTypes types={pokemon.types} />
+</section>
+
+<script>
+  const $audio = document.querySelector('[data-audio-cry]') as HTMLAudioElement;
+  const $playButton = document.querySelector(
+    '.play-button'
+  ) as HTMLButtonElement;
+
+  $playButton.addEventListener('click', () => {
+    $audio.play();
+  });
+</script>

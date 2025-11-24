@@ -1,0 +1,36 @@
+{
+  "name": "06-npm",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "reset": "rm -r node_modules && npm install",
+    "linter": "lynt",
+    "linter:fix": "lynt --fix",
+    "minify:css": "cleancss -o produccion/styles/style.min.css src/styles/style.css",
+    "esbuild": "esbuild ./src/main.js --bundle --outdir=produccion --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "clean-css-cli": "^5.6.3",
+    "esbuild": "^0.25.3",
+    "lynt": "^0.5.5",
+    "nanoid": "^5.1.5"
+  },
+  "lynt": {
+    "rules": {
+      "prefer-const": "on",
+      "no-console": "on",
+      "no-magic-numbers": [
+        "error",
+        {
+          "ignore": [
+            1
+          ]
+        }
+      ]
+    }
+  }
+}

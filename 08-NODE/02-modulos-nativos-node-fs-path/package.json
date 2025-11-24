@@ -1,0 +1,16 @@
+{
+  "name": "02-modulos-nativos-node",
+  "version": "1.0.0",
+  "main": "leer-archivo.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^24.0.10"
+  }
+}

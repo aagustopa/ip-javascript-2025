@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://picsum.photos/32" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Forumarios en JavaScript</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Forumarios en JavaScript</h1>
+
+      <form class="main-form" novalidate autocomplete="off">
+        <div class="input-box">
+          <label for="name">Nombre:</label>
+          <input id="name" type="text" placeholder="John" name="name" />
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="John@email.com" name="email" required />
+        </div>
+
+        <div class="input-box">
+          <label for="age">Edad:</label>
+          <input id="age" type="number" name="age" />
+        </div>
+
+        <div class="input-box">
+          <label for="age">Edad:</label>
+          <input id="age" type="number" name="age" />
+        </div>
+
+        <div class="input-box">
+          <label for="color">Color favorito:</label>
+          <input id="color" type="color" name="color" />
+        </div>
+
+        <div class="input-box">
+          <label for="city">Ciudad:</label>
+          <select id="city" name="city">
+            <option value="">Selecciona una ciudad...</option>
+            <option value="1">Barcelona</option>
+            <option value="2">Madrid</option>
+            <option value="3">Sevilla</option>
+            <option value="4">A Coruña</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <label for="accept">¿Aceptas?</label>
+          <input id="accept" type="checkbox" name="accept" />
+        </div>
+
+        <h2>Género</h2>
+        <p>Los radio buttons necesitan el mismo name y necesitan que tú les pongas el value para cada seleccion</p>
+        <div class="input-box">
+          <input id="male" type="radio" name="gender" value="male" />
+          <label for="male">Masculino</label>
+
+          <br />
+
+          <input id="female" type="radio" name="gender" value="female" />
+          <label for="female">Femenino</label>
+
+          <br />
+
+          <input id="non-binary" type="radio" name="gender" value="non-binary" />
+          <label for="non-binary">No binario</label>
+        </div>
+
+        <div class="input-box">
+          <label for="note">Nota</label>
+          <input id="note" type="range" name="note" min="0" max="10" value="0" />
+        </div>
+
+        <div class="input-box">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+
+        <div class="input-box">
+          <label for="photo">Foto:</label>
+          <input id="photo" name="photo" type="file" />
+        </div>
+
+        <button name="btn-1" class="form-button" type="submit">Enviar</button>
+
+        <button name="btn-2" type="submit">Enviar con botón 2</button>
+        <button name="btn-3" type="submit">Enviar con botón 3</button>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

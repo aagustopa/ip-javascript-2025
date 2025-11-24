@@ -1,0 +1,16 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "02-modulos-nativos-node",
+      "dependencies": {
+        "@types/node": "^24.0.10",
+      },
+    },
+  },
+  "packages": {
+    "@types/node": ["@types/node@24.0.10", "", { "dependencies": { "undici-types": "~7.8.0" } }, "sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA=="],
+
+    "undici-types": ["undici-types@7.8.0", "", {}, "sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw=="],
+  }
+}

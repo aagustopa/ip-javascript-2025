@@ -1,0 +1,31 @@
+---
+import getPokemonTypeBackgroundName from '../utils/getPokemoTypeBackgroundName';
+
+interface Type {
+  slot: number;
+  type: {
+    name: string;
+    url: string;
+  };
+}
+
+interface Props {
+  types: Type[];
+}
+
+const { types } = Astro.props;
+---
+
+<div class="mt-4 flex flex-col items-center text-center gap-2">
+  {
+    types.map((type) => {
+      const bgTypeColor = getPokemonTypeBackgroundName(type.type.name);
+
+      return (
+        <span class={`${bgTypeColor} flex pb-1 text-sm px-4 rounded-full`}>
+          {type.type.name}
+        </span>
+      );
+    })
+  }
+</div>

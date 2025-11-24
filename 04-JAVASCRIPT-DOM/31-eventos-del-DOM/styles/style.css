@@ -1,0 +1,42 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+summary > * {
+  display: inline;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+button {
+  margin: 2rem 0;
+}
+
+input:focus {
+  text-decoration: underline;
+}
+
+.underline {
+  text-decoration: underline red;
+}
+
+
+.caja-color {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+
+.scroll-progress {
+  height: 10px;
+  width:0 ;
+  background-color: crimson;
+  position: fixed;
+  top: 0;
+  left:0;
+}

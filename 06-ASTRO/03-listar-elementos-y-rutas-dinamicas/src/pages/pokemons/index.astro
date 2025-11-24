@@ -1,0 +1,24 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import PokemonGridItem from '../../components/PokemonGridItem.astro';
+
+import type { PokemonSimpleData } from '../../config/types';
+
+const resp = await fetch('https://pokeapi.co/api/v2/pokemon?limit=20');
+const pokemonData = (await resp.json()) as PokemonSimpleData;
+---
+
+<MainLayout>
+  <main class="container mx-auto my-8">
+    <h2 class="text-2xl font-bold my-4">Lista de pokemons</h2>
+    <section
+      class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+    >
+      {
+        pokemonData.results.map((pokemon) => (
+          <PokemonGridItem pokemon={pokemon} />
+        ))
+      }
+    </section>
+  </main>
+</MainLayout>

@@ -1,0 +1,5 @@
+
+
+bunx tsc --init (tsconfig.json)
+
+bun i -D @types/express

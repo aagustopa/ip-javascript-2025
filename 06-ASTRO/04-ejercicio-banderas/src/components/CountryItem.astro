@@ -1,0 +1,22 @@
+---
+// TODO: Recibe de las props 1 country
+
+// import type { Country } from "../config/types";
+
+// interface Props {
+//   country: Country;
+// }
+
+const { country } = Astro.props;
+---
+
+<!-- TODO: Cada país será un link a una ruta que muestre la info del país --><!-- La ruta debería ser /country/nombrePais -->
+<!-- <a href={`/country/${country.name.common}`}> -->
+  <article
+    class="p-4 border border-gray-200 rounded shadow-lg flex flex-col items-center"
+  >
+    <!-- TODO: Aquí se muestra la info del país -->
+    <img class="w-full" src=`${country.flags.svg}` alt=`Bandera de ` />
+    <h2 class="text-xl font-bold mt-4">{country.name.common}</h2>
+  </article>
+<!-- </a> -->

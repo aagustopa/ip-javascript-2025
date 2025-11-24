@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <h1>Haciendo pruebas con Vite</h1>
+
+    <h2>Imagen añadida directamente en el HTML</h2>
+    <p>En el HTML solo puedo usar las imágenes que hay en la carpeta public</p>
+    <img src="/assets/img/logo.png" alt="" width="100">
+
+
+    <h2>Imagen añadida desde JavaScript y dentro de public</h2>
+    <div class="photo-box-from-public"></div>
+
+
+    <h2>Imagen añadida desde JavaScript y dentro de la carpeta src</h2>
+    <p>Para hacerlo así <strong>Asegúrate de importar la imagen arriba y usarlo en el src de la imagen</strong></p>
+
+    <h3>Imagen original para compararla con la de JS</h3>
+    <img src="/assets/img/perro1.jpg" alt="Foto de un perro" width="200" />
+    <div class="photo-box-from-src"></div>
+   
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

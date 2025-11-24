@@ -1,0 +1,88 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+summary > * {
+  display: inline;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+
+.video-box {
+  /* border: 2px solid crimson; */
+  width: 300px;
+  position: relative;
+
+  &:hover .buttons {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  .buttons {
+    /* border: 2px solid yellow; */
+    display: flex;
+    gap: 2rem;
+
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    translate: -50%;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+
+/*! lo comento porque lo he añadido arriba en el css anidado usando un ampersand & */
+/* .video-box:hover .buttons {
+  opacity: 1;
+  visibility: visible;
+} */
+
+
+/* Modal */
+
+
+.modal-1 {
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+
+  animation: modalIn 1s ease;
+  
+}
+
+.modal-1::backdrop {
+  animation: modalIn 1s ease;
+
+  background-color: rgba(0, 0, 0, 0.532);
+}
+
+
+@keyframes modalIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

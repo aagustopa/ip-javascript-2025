@@ -1,0 +1,16 @@
+---
+import CountryItem from "./CountryItem.astro";
+
+//* TODO: Recibes el listado de países por props
+
+const { countries } = Astro.props;
+---
+
+<section class="grid grid-cols-2 md:grid-cols-5 gap-4 my-8">
+  <!-- TODO: Aquí debería ir un listado de los países, es decir un listado de <CountryItem /> -->
+  {
+    countries.map((country) => {
+      return <CountryItem country={country} />;
+    })
+  }
+</section>

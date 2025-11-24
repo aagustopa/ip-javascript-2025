@@ -1,0 +1,21 @@
+---
+import CountryList from "../components/CountryList.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+// TODO: Al cargar que llame a la funcion getCountries y obtenga todos los países
+const response = await fetch("https://restcountries.com/v3.1/all");
+const data = await response.json();
+// data.map((country) => {
+//   console.log(country.name.common);
+// });
+// TODO: Le pasas el array de países al componente CountryList
+---
+
+<MainLayout title="Home">
+  <main class="container mx-auto my-8">
+    <h1 class="text-5xl font-bold">Lista de países</h1>
+    <CountryList countries={data} />;
+  </main>
+</MainLayout>
+
+<!-- TASKS -->

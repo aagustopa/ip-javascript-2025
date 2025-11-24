@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "Ivan",
+    "email": "ivan@gmail.com",
+    "password": "123456"
+  },
+  {
+    "id": 2,
+    "username": "Pepe",
+    "email": "pepe@gmail.com",
+    "password": "123456"
+  },
+  {
+    "id": 3,
+    "username": "andreuchi",
+    "email": "andrea@gmail.com",
+    "password": "$2b$10$IPbQJORpZWaTygav9dYANOJlHicSd2FN2q8nO0LU1B6HE8TMyzSYO"
+  },
+  {
+    "id": 4,
+    "username": "nastiyuki",
+    "email": "nastya@gmail.com",
+    "password": "$2b$10$F722wlXwOb1iWdwasF7CruEyYDprNk3WzK4.ivckxHzQMxabUSzFW"
+  },
+  {
+    "id": 5,
+    "username": "ureñu666",
+    "email": "adriu@gmail.com",
+    "password": "$2b$10$GsFuj8FIQdbTaUk8iG3hBOx8TSCJvn6ZW4JYqIPPNw7bSsglE1cS6"
+  }
+]

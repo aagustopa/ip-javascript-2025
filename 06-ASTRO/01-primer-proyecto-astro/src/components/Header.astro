@@ -1,0 +1,43 @@
+---
+// Sacamos el path de la ruta actual
+const { pathname } = Astro.url;
+---
+
+<header>
+  <nav>
+    <a class={pathname === '/' ? 'active' : undefined} href="/">Home</a>
+    <a
+      class={pathname === '/curriculum' ? 'active' : undefined}
+      href="/curriculum">Currículum</a
+    >
+    <a class={pathname === '/projects' ? 'active' : undefined} href="/projects"
+      >Proyectos</a
+    >
+    <a class={pathname === '/contact' ? 'active' : undefined} href="/contact"
+      >Contacto</a
+    >
+  </nav>
+</header>
+
+<style>
+  header {
+    background: var(--main-color);
+    padding: 1rem;
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .active {
+      color: gold;
+      text-decoration: underline gold;
+    }
+  }
+</style>
